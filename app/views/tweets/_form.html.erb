@@ -1,0 +1,30 @@
+<%= form_with model: tweet, local: true do |f|%>
+  <div class="field">
+    <%= f.label :title, "料理名" %><br />
+    <%= f.text_field :title, id:"tweet_title" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :material, "材料" %><br />
+    <%= f.text_area :material, class: :form__text, id:"tweet_material" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :guide, "参考サイト" %><br />
+    <%= f.text_area :guide, class: :form__text, id:"tweet_guide" %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :recipe, "レシピ" %><br />
+    <%= f.text_area :recipe, class: :form__text, id:"tweet_recipe" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image, "料理の画像" %><br />
+    <%= f.file_field :image, id:"tweet_image" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "保存する", class: :form__btn  %>
+  </div>
+<% end %>
