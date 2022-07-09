@@ -162,27 +162,27 @@ a {
 }
 
 /* 詳細ページ */
-.tweet_wrapper{
+.prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
-.tweet__hedding{
+.prototype__hedding{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-.tweet__user{
+.prototype__user{
   display: block;
   font-size: 16px;
   color: #999;
   text-align: center;
   text-decoration: underline;
 }
-.tweet__image{
+.prototype__image{
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
-.tweet__detail{
+.prototype__detail{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -192,12 +192,12 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
-.tweet__manage{
+.prototype__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-.tweet__btn{
+.prototype__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -209,12 +209,12 @@ a {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-.tweet__btn:hover{
+.prototype__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.tweet__comments{
+.prototype__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
@@ -291,7 +291,7 @@ a {
     width: 48%;
     margin-bottom: 40px;
   }
-  .tweet_image{
+  .prototype_image{
     width: 60%;
   }
 }
@@ -314,7 +314,7 @@ a {
   .card__summary {
     font-size: 14px;
   }
-  .tweet_image{
+  .prototype_image{
     width: 100%;
   }
   .table{
