@@ -6,6 +6,10 @@
         <%= link_to "#{current_user.nickname}さん", root_path, class: :greeting__link%>
       </div>
     <% end %>
+  <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "レシピ・材料を検索する", class: "search-input" %>
+    <%= form.submit "検索", class: "search-btn" %>
+  <% end %>  
     <div class="card__wrapper">
       <%= render partial: 'tweet', collection: @tweets %>
     </div>

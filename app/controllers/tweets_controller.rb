@@ -1,5 +1,5 @@
 class TweetsController < ApplicationController
-  before_action :set_prototype, except: [:index, :new, :create]
+  before_action :set_tweet, except: [:index, :new, :create, :search]
 
   def index
     @tweets = Tweet.includes(:user)
@@ -19,6 +19,10 @@ class TweetsController < ApplicationController
   end
 
   def show
+  end
+
+  def search
+    @tweets = SearchTweetsService.search(params[:keyword])
   end
 
   def edit
@@ -46,7 +50,7 @@ class TweetsController < ApplicationController
     params.require(:tweet).permit(:title, :material, :guide, :recipe, :image).merge(user_id: current_user.id)
   end
 
-  def set_prototype
+  def set_tweet
     @tweet = Tweet.find(params[:id])
   end
 end
