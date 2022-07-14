@@ -52,7 +52,9 @@ https://docs.google.com/spreadsheets/d/1gDPUyJbg0L_VJyW5bfRqTu4gC2Qoislywy732T84
 
 # 実装した機能についての画像やGIFおよびその説明
 ・レシピの内容（料理名、食材、参考サイト、画像）を入力して、保存するボタンを押すと、レシピが保存される
-・
+[![Image from Gyazo](https://i.gyazo.com/329b5be0b0e48513d53ba29326e7897b.gif)](https://gyazo.com/329b5be0b0e48513d53ba29326e7897b)
+・料理名または食材を入力して検索ボタンを押すと、検索したワードがヒットするレシピが表示される
+[![Image from Gyazo](https://i.gyazo.com/1c117de5ca2e07255b640ecc693bb71f.gif)](https://gyazo.com/1c117de5ca2e07255b640ecc693bb71f)
 
 # 実装予定の機能
 現在、リンク機能を実装中。
@@ -76,5 +78,5 @@ https://docs.google.com/spreadsheets/d/1gDPUyJbg0L_VJyW5bfRqTu4gC2Qoislywy732T84
 % yarn install
 
 # 工夫したポイント
-レシピサイトのURLを入力することによって、レシピの材料や作り方を入力せずにレシピを投稿でき、
-レシピを見たいときは、投稿したレシピサイトのURLへ移動すればレシピが見られるように工夫をしました。
+レシピサイトのURLを入力することによって、投稿したレシピサイトのURLを検索すれば、
+レシピの材料や作り方を入力せずにレシピを投稿できるように工夫をしました。
