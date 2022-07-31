@@ -24,7 +24,7 @@
         <div class="prototype__detail">
           <p class="detail__title">参考サイト</p>
           <p class="detail__message">
-            <%= @tweet.guide %>
+            <%= simple_format(text_url_to_link(@tweet.guide), {}, sanitize: false) %>
           </p>
         </div>
       </div>
